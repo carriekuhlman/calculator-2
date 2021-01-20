@@ -17,4 +17,7 @@ while True:
         break
     else:
         tokens = input_string.split(' ')
-        print(tokens)
+        if tokens[0] == "+":
+            answer = (add(int(tokens[1]), int(tokens[2])))
+    
+        print(float(answer))
