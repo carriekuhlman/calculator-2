@@ -4,4 +4,17 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, )
 
 
-# Replace this with your code
+# loop for an input string
+# if q --> quit
+# otherwise: tokenize it
+# look at first token
+# do equation/math for whatever it corresponds to
+# return as a float number
+
+while True:
+    input_string = input("Write an equation > ")
+    if input_string == "q":
+        break
+    else:
+        tokens = input_string.split(' ')
+        print(tokens)
