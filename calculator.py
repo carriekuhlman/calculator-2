@@ -3,7 +3,6 @@
 from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, )
 
-
 # loop for an input string
 # if q --> quit
 # otherwise: tokenize it
