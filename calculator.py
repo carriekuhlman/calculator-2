@@ -12,10 +12,31 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 
 while True:
     input_string = input("Write an equation > ")
+    tokens = input_string.split(' ')
+    valid_tokens = ["+", "-", "*", "/", "square", "cube", "pow", "mod"]  
+
     if input_string == "q":
         break
+
     else:
-        tokens = input_string.split(' ')
+        #create valid tokens list
+        #iterate through tokens (using range of len)
+            #if tokens[0] is not in our operator list
+                #print error message
+            #else:
+                #try to convert the passed string to integer
+                #exception would be a print statement with an error message
+
+        # for i in range(len(tokens)): 
+        #     if i == 0:
+        #         if tokens[i] not in valid_tokens: 
+        #             print("Input not valid.")
+        #     else:
+        #         try: 
+        #             int(tokens[i])
+        #         except:
+        #             print("Input not valid.") 
+
         if tokens[0] == "+":
             answer = (add(int(tokens[1]), int(tokens[2])))
 
@@ -39,5 +60,6 @@ while True:
 
         elif tokens[0] == "mod":
             answer = (mod(int(tokens[1]), int(tokens[2])))
-    
+           
         print(float(answer))
+        
